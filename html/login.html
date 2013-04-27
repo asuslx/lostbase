@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <link href="main.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="background_wrapper">
+    </div>
+    <div id='content'>
+      <header>
+        <h1>lostbase</h1>
+      </header>
+      <article>
+        <div id='sign_in'>
+          <p>Вход в игру</p>
+          <form>
+            <div class='field'>
+              <label for="account_name">E-mail</label>
+              <input id="account_name" value="" name="account_name" maxlength="320" type="text" tabindex="1" class="input" />
+            </div>
+            <div class='field'>
+              <label for="password">Пароль</label>
+              <input id="password" name="password" maxlength="16" type="password" tabindex="2" autocomplete="off" class="input" />
+            </div>
+            <button class="button" type="submit" data-text="Загрузка…">
+              <span class="button_title">Войти</span>
+            </button>
+          </form>
+          <br/><br/>
+          <span class="note">У вас еще нет учетной записи?</span>
+          <a href='#'>Создайте ее!</a>
+        </div>
+      </article>
+    </div>
+  </body>
+</html>
