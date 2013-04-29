@@ -49,7 +49,7 @@ h1 {
 }
 
 .field label {
-  color: darkgray;;
+  color: darkgray;
   display: block;
   padding-bottom: 2px;
   font-size: 14px;
@@ -141,4 +141,374 @@ a:hover {
 .note {
   color: yellowgreen;
   font-size: 14px;
+}
+
+.panel {
+  border: 5px solid #525E67;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  float: left;
+  margin: 5px;
+  background: #1d1924;
+}
+
+#left_panel {
+  width: 200px;
+}
+#middle_panel {
+  width: 510px;
+}
+#right_panel {
+  width: 200px;
+}
+
+.panel_separator {
+  background-image: linear-gradient(left , rgb(46,46,46) 48%, rgb(82,94,103) 74%);
+  background-image: -o-linear-gradient(left , rgb(46,46,46) 48%, rgb(82,94,103) 74%);
+  background-image: -moz-linear-gradient(left , rgb(46,46,46) 48%, rgb(82,94,103) 74%);
+  background-image: -webkit-linear-gradient(left , rgb(46,46,46) 48%, rgb(82,94,103) 74%);
+  background-image: -ms-linear-gradient(left , rgb(46,46,46) 48%, rgb(82,94,103) 74%);
+
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    right bottom,
+    color-stop(0.48, rgb(46,46,46)),
+    color-stop(0.74, rgb(82,94,103))
+  );
+
+  height: 2px;
+  margin: 5px 5px 10px;
+}
+
+#diggers_list {
+  height: 200px;
+  overflow-y: auto;
+}
+#digger_tasks {
+  height: 300px;
+  overflow-y: auto;
+}
+#digger_inventory {
+  height: 200px;
+  overflow-y: auto;
+}
+
+.digger_icon {
+  width: 52px;
+  height: 35px;
+  margin: 3px;
+  padding: 3px;
+
+  background-image: linear-gradient(left , rgb(77,4,77) 48%, rgb(18,3,38) 81%, rgb(20,4,41) 7%);
+  background-image: -o-linear-gradient(left , rgb(77,4,77) 48%, rgb(18,3,38) 81%, rgb(20,4,41) 7%);
+  background-image: -moz-linear-gradient(left , rgb(77,4,77) 48%, rgb(18,3,38) 81%, rgb(20,4,41) 7%);
+  background-image: -webkit-linear-gradient(left , rgb(77,4,77) 48%, rgb(18,3,38) 81%, rgb(20,4,41) 7%);
+  background-image: -ms-linear-gradient(left , rgb(77,4,77) 48%, rgb(18,3,38) 81%, rgb(20,4,41) 7%);
+
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    right bottom,
+    color-stop(0.48, rgb(77,4,77)),
+    color-stop(0.81, rgb(18,3,38)),
+    color-stop(0.07, rgb(20,4,41))
+  );
+
+  border: 1px solid #820082;
+  float: left;
+  cursor: pointer;
+}
+.digger_icon span {
+  color: white;
+} 
+
+#digger_name {
+  color: yellowgreen;
+  display: block;
+  font-size: 25px;
+  margin: 5px 0 15px 5px;
+}
+
+.stat_block {
+  margin: 5px 5px 15px;
+}
+.stat_block label{
+  color: darkgray;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 5px;
+  display: block;
+}
+.stat_block p {
+  color: yellowgreen;
+  font-size: 15px;
+  margin-top: 30px;
+}
+.stat_bar {
+  margin: 0 5px;
+  height: 30px;
+  border: 1px solid bisque;
+  position: relative;
+}
+#digger_health_bar {
+  background-image: linear-gradient(bottom, rgb(117,0,0) 35%, rgb(217,65,65) 68%);
+  background-image: -o-linear-gradient(bottom, rgb(117,0,0) 35%, rgb(217,65,65) 68%);
+  background-image: -moz-linear-gradient(bottom, rgb(117,0,0) 35%, rgb(217,65,65) 68%);
+  background-image: -webkit-linear-gradient(bottom, rgb(117,0,0) 35%, rgb(217,65,65) 68%);
+  background-image: -ms-linear-gradient(bottom, rgb(117,0,0) 35%, rgb(217,65,65) 68%);
+
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.35, rgb(117,0,0)),
+    color-stop(0.68, rgb(217,65,65))
+  );
+
+  height: 29px;
+}
+.stat_value {
+  font-style: italic;
+  color: white;
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  font-size: 15px;
+  text-shadow: 1px 1px 3px black;
+}
+
+#digger_energy_bar {
+  background-image: linear-gradient(bottom, rgb(145,126,3) 35%, rgb(217,197,65) 68%);
+  background-image: -o-linear-gradient(bottom, rgb(145,126,3) 35%, rgb(217,197,65) 68%);
+  background-image: -moz-linear-gradient(bottom, rgb(145,126,3) 35%, rgb(217,197,65) 68%);
+  background-image: -webkit-linear-gradient(bottom, rgb(145,126,3) 35%, rgb(217,197,65) 68%);
+  background-image: -ms-linear-gradient(bottom, rgb(145,126,3) 35%, rgb(217,197,65) 68%);
+
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.35, rgb(145,126,3)),
+    color-stop(0.68, rgb(217,197,65))
+  );
+  height: 29px;
+}
+
+#digger_action_bar {
+  background-image: linear-gradient(bottom, rgb(87,92,91) 15%, rgb(145,161,156) 58%);
+  background-image: -o-linear-gradient(bottom, rgb(87,92,91) 15%, rgb(145,161,156) 58%);
+  background-image: -moz-linear-gradient(bottom, rgb(87,92,91) 15%, rgb(145,161,156) 58%);
+  background-image: -webkit-linear-gradient(bottom, rgb(87,92,91) 15%, rgb(145,161,156) 58%);
+  background-image: -ms-linear-gradient(bottom, rgb(87,92,91) 15%, rgb(145,161,156) 58%);
+
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.15, rgb(87,92,91)),
+    color-stop(0.58, rgb(145,161,156))
+  );
+  height: 29px;
+}
+
+.digger_item {
+  width: 52px;
+  height: 35px;
+  margin: 3px;
+  padding: 3px;
+
+  background-image: linear-gradient(left , rgb(12,4,77) 48%, rgb(18,3,38) 81%, rgb(20,4,41) 7%);
+  background-image: -o-linear-gradient(left , rgb(12,4,77) 48%, rgb(18,3,38) 81%, rgb(20,4,41) 7%);
+  background-image: -moz-linear-gradient(left , rgb(12,4,77) 48%, rgb(18,3,38) 81%, rgb(20,4,41) 7%);
+  background-image: -webkit-linear-gradient(left , rgb(12,4,77) 48%, rgb(18,3,38) 81%, rgb(20,4,41) 7%);
+  background-image: -ms-linear-gradient(left , rgb(12,4,77) 48%, rgb(18,3,38) 81%, rgb(20,4,41) 7%);
+
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    right bottom,
+    color-stop(0.48, rgb(12,4,77)),
+    color-stop(0.81, rgb(18,3,38)),
+    color-stop(0.07, rgb(20,4,41))
+  );
+
+  border: 1px solid #0032fc;
+  float: left;
+  cursor: pointer;
+}
+.digger_item span {
+  color: white;
+} 
+
+#doors {
+  height: 345px;
+  padding: 50px 0;
+}
+.doors_block {
+  margin: 0 auto;
+}
+.door {
+  height: 160px;
+  float: left;
+  border: 5px solid black;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin: 4px;
+  width: 109px;
+  position: relative;
+}
+.closed {
+  background: #3a3e4f url(lock.png) no-repeat center center;
+}
+
+.coordinate {
+  position: absolute;
+  color: bisque;
+  font-style: italic;
+  text-shadow: 1px 1px 3px black;
+}
+.x1 {
+  left: 4px;
+  top: 4px;
+}
+.x2 {
+  right: 4px;
+  top: 4px;
+}
+.x3 {
+  left: 4px;
+  bottom: 4px;
+}
+.x4 {
+  right: 4px;
+  bottom: 4px
+}
+
+#chat *{
+  text-shadow: 1px 1px 3px black;
+}
+
+#chat_body {
+  border: 1px solid bisque;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  height: 222px;
+  padding: 8px;
+}
+
+#chat_tabs {
+  margin-bottom: 5px;
+}
+
+.chat_tab {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 5px;
+  float: left;
+  cursor: pointer;
+}
+.general_channel {
+  border: 1px solid bisque;
+  color: bisque;
+}
+.private_channel {
+  border: 1px solid #bd00bd;
+  color: #bd00bd;
+}
+
+.chat_message {
+  margin-bottom: 3px;
+}
+
+.general_message {
+  color: bisque;
+}
+.system_message {
+  color: #6582f5;
+}
+.private_message {
+  color: #bd00bd;
+}
+
+.room_item_icon {
+  width: 52px;
+  height: 35px;
+  margin: 3px;
+  padding: 3px;
+
+  background-image: linear-gradient(left , rgb(12,4,77) 48%, rgb(18,3,38) 81%, rgb(20,4,41) 7%);
+  background-image: -o-linear-gradient(left , rgb(12,4,77) 48%, rgb(18,3,38) 81%, rgb(20,4,41) 7%);
+  background-image: -moz-linear-gradient(left , rgb(12,4,77) 48%, rgb(18,3,38) 81%, rgb(20,4,41) 7%);
+  background-image: -webkit-linear-gradient(left , rgb(12,4,77) 48%, rgb(18,3,38) 81%, rgb(20,4,41) 7%);
+  background-image: -ms-linear-gradient(left , rgb(12,4,77) 48%, rgb(18,3,38) 81%, rgb(20,4,41) 7%);
+
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    right bottom,
+    color-stop(0.48, rgb(12,4,77)),
+    color-stop(0.81, rgb(18,3,38)),
+    color-stop(0.07, rgb(20,4,41))
+  );
+
+  border: 1px solid #0032fc;
+  float: left;
+  cursor: pointer;
+}
+.room_item_icon span {
+  color: white;
+}
+
+#room_items {
+  height: 360px;
+}
+#other_diggers {
+  height: 358px;
+}
+
+
+.other_digger_icon {
+  width: 52px;
+  height: 35px;
+  margin: 3px;
+  padding: 3px;
+
+  background-image: linear-gradient(left , rgb(77,4,77) 48%, rgb(18,3,38) 81%, rgb(20,4,41) 7%);
+  background-image: -o-linear-gradient(left , rgb(77,4,77) 48%, rgb(18,3,38) 81%, rgb(20,4,41) 7%);
+  background-image: -moz-linear-gradient(left , rgb(77,4,77) 48%, rgb(18,3,38) 81%, rgb(20,4,41) 7%);
+  background-image: -webkit-linear-gradient(left , rgb(77,4,77) 48%, rgb(18,3,38) 81%, rgb(20,4,41) 7%);
+  background-image: -ms-linear-gradient(left , rgb(77,4,77) 48%, rgb(18,3,38) 81%, rgb(20,4,41) 7%);
+
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    right bottom,
+    color-stop(0.48, rgb(77,4,77)),
+    color-stop(0.81, rgb(18,3,38)),
+    color-stop(0.07, rgb(20,4,41))
+  );
+
+  border: 1px solid #820082;
+  float: left;
+  cursor: pointer;
+}
+.other_digger_icon span {
+  color: white;
+} 
+
+
+.clearfix {
+  clear: both;
+}
+.block_title {
+  color: yellowgreen;
+  display: block;
+  margin-bottom: 4px;
 }
