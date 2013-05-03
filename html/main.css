@@ -48,6 +48,16 @@ h1 {
   text-transform: uppercase;
 }
 
+h4 {
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 10px;
+  text-shadow: 3px 3px 10px bisque;
+  text-align: center;
+  color: whitesmoke;
+  text-transform: uppercase;
+}
+
 .field label {
   color: darkgray;
   display: block;
@@ -68,7 +78,65 @@ h1 {
   font-size: 25px;
 }
 
+#register {
+  text-align: center;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#register p{
+  color: yellowgreen;
+  font-size: 25px;
+}
+
+#register table {
+  width: 100%;
+}
+
+#register table td{
+  width: 33%;
+  padding: 0 10px;
+}
+
+#register table label {
+  display: inline;
+}
+
+
+#register table tr td:nth-child(1){
+  text-align: right;
+}
+
+#register table tr td:nth-child(3){
+  text-align: left;
+  vertical-align: top;
+  padding-top: 13px;
+}
+
+.comment {
+
+}
+.good_comment {
+  color: yellowgreen;
+}
+.bad_comment {
+  color: #FF0368;
+}
+
+
 #sign_in input {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", "Arial", sans-serif;
+  color: #000;
+  padding: 7px;
+  font-size: 20px;
+  border: 1px solid #c0c0c0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  width: 315px;
+}
+
+#register input {
   font-family: "Lucida Sans Unicode", "Lucida Grande", "Arial", sans-serif;
   color: #000;
   padding: 7px;
@@ -85,18 +153,18 @@ h1 {
 }
 
 .button {
-  background-image: linear-gradient(bottom, rgb(18,97,255) 33%, rgb(59,159,247) 67%);
-  background-image: -o-linear-gradient(bottom, rgb(18,97,255) 33%, rgb(59,159,247) 67%);
-  background-image: -moz-linear-gradient(bottom, rgb(18,97,255) 33%, rgb(59,159,247) 67%);
-  background-image: -webkit-linear-gradient(bottom, rgb(18,97,255) 33%, rgb(59,159,247) 67%);
-  background-image: -ms-linear-gradient(bottom, rgb(18,97,255) 33%, rgb(59,159,247) 67%);
+  background-image: linear-gradient(bottom, #ADADAD 9%, #F0F0F0 55%);
+  background-image: -o-linear-gradient(bottom, #ADADAD 9%, #F0F0F0 55%);
+  background-image: -moz-linear-gradient(bottom, #ADADAD 9%, #F0F0F0 55%);
+  background-image: -webkit-linear-gradient(bottom, #ADADAD 9%, #F0F0F0 55%);
+  background-image: -ms-linear-gradient(bottom, #ADADAD 9%, #F0F0F0 55%);
 
   background-image: -webkit-gradient(
     linear,
     left bottom,
     left top,
-    color-stop(0.33, rgb(18,97,255)),
-    color-stop(0.67, rgb(59,159,247))
+    color-stop(0.09, #ADADAD),
+    color-stop(0.55, #F0F0F0)
   );
 
   border: 0;
@@ -109,20 +177,19 @@ h1 {
   outline: none;
   text-align: center;
   white-space: nowrap;
-  cursor: pointer;
   border: 1px solid #c0c0c0;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
 .button:hover {
-  background: #5cb3ff;
+  background: bisque;
 }
 
 
 .button_title {
   padding: 10px 45px;
-  color: white;
+  color: black;
   font-weight: 700;
   display: block;
   font-size: 18px;
