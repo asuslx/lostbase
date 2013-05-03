@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <link href="main.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="background_wrapper">
+    </div>
+    <div id='content'>
+      <header>
+        <h4>lostbase</h4>
+      </header>
+      <article>
+        <div id='register' class='panel'>
+          <p>Регистрация нового игрока</p>
+          <form>
+            <table>
+              <tr>
+                <td>
+                  <div class='field'>
+                    <label for="account_name">Введите существующий E-mail</label>
+                  </div>
+                </td>
+                <td>
+                  <div class='field'>
+                    <input id="account_name" value="" name="account_name" maxlength="320" type="text" tabindex="1" class="input" />
+                  </div>
+                </td>
+                <td>
+                  <span class="comment good_comment">E-mail доступен</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class='field'>
+                    <label for="nickname">Введите имя пользователя</label>
+                  </div>
+                </td>
+                <td>
+                  <div class='field'>
+                    <input id="nickname" value="" name="nickname" maxlength="320" type="text" tabindex="1" class="input" />
+                  </div>
+                </td>
+                <td>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class='field'>
+                    <label for="password">Пароль</label>
+                  </div>
+                </td>
+                <td>
+                  <div class='field'>
+                    <input id="password" name="password" maxlength="16" type="password" tabindex="2" autocomplete="off" class="input" />
+                  </div>
+                </td>
+                <td>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class='field'>
+                    <label for="password_conf">Подтверждение Пароля</label>
+                  </div>
+                </td>
+
+                <td>
+                  <div class='field'>
+                    <input id="password_conf" name="password_conf" maxlength="16" type="password" tabindex="2" autocomplete="off" class="input" />
+                  </div>
+                </td>
+                <td>
+                  <span class="comment bad_comment">Пароли не совпадают</span>
+                </td>
+              </tr>
+            </table>
+            <button class="button" type="submit" data-text="Загрузка…">
+              <span class="button_title">Зарегистрировать</span>
+            </button>
+
+          </form>
+          <br/>
+          <br/>
+        </div>
+
+      </article>
+    </div>
+  </body>
+</html>
